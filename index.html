@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GM7MQG76P6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GM7MQG76P6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>François Aubin | Jazz Pianist & Composer</title>
+    <meta name="description" content="Discover the soulful jazz piano of François Aubin. Explore upcoming events, listen to music, and get the latest news from the renowned jazz pianist and composer.">
+    <link rel="canonical" href="https://www.francoisaubin.com">
+
+    <meta property="og:title" content="François Aubin | Jazz Pianist & Composer">
+    <meta property="og:description" content="Discover the soulful jazz piano of François Aubin. Explore upcoming events, listen to music, and get the latest news from the renowned jazz pianist and composer.">
+    <meta property="og:image" content="https://i.ibb.co/Kw1Mf71/4-F0-U8155-1.jpg">
+    <meta property="og:url" content="https://www.francoisaubin.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="François Aubin | Jazz Pianist & Composer">
+    <meta name="twitter:description" content="Discover the soulful jazz piano of François Aubin. Explore upcoming events, listen to music, and get the latest news from the renowned jazz pianist and composer.">
+    <meta name="twitter:image" content="https://i.ibb.co/Kw1Mf71/4-F0-U8155-1.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Musician",
+      "name": "François Aubin",
+      "url": "https://www.francoisaubin.com",
+      "image": "https://i.ibb.co/Kw1Mf71/4-F0-U8155-1.jpg",
+      "sameAs": [
+        "https://twitter.com/your_twitter_username",
+        "https://www.facebook.com/your_facebook_username",
+        "https://www.instagram.com/your_instagram_username"
+      ],
+      "jobTitle": "Jazz Pianist & Composer",
+      "description": "François Aubin is a renowned jazz pianist known for his soulful performances and compositions.",
+      "genre": "Jazz",
+      "performerIn": {
+        "@type": "Event",
+        "name": "François Aubin Live Performance",
+        "startDate": "2025-07-12T21:00",
+        "location": {
+          "@type": "Place",
+          "name": "Blue Note NYC",
+          "address": "New York, NY, United States"
+        }
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Resets & Variables */
+        :root {
+            --bg-color: #121212; /* Deep Graphite */
+            --text-primary: #E0E0E0; /* Off-white */
+            --text-secondary: #A0A0A0; /* Muted Grey */
+            --accent-color: #FFFFFF; /* Pure White for interaction */
+            --border-color: #333333;
+            /* This determines the width of the text content blocks */
+            --content-width: 900px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden; /* Prevent horizontal scrollbar due to full-width elements */
+        }
+
+        /* The container class centers text content and gives it max width */
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* We keep nav static now so it doesn't overlap the big hero image awkwardly */
+            background-color: var(--bg-color);
+            z-index: 1000;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 1.1em;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 0.95em;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Header & Full Width Image */
+        header {
+            /* Spacing for the title text */
+            padding: 60px 0 40px 0;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+        }
+
+        /* STYLES FOR THE FULL WIDTH IMAGE */
+        .hero-banner-container {
+            width: 100%;
+            /* Optional: limits height on very large screens so it doesn't take over too much vertical space.
+               Adjust '85vh' to taste, or remove it if you want it to show the whole image height always. */
+            max-height: 85vh;
+            overflow: hidden;
+            margin-bottom: 80px; /* Spacing between image and "About" section */
+        }
+
+        .hero-img-full {
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover ensures the image fills the banner area without stretching,
+               cropping excess if necessary. Good for responsiveness. */
+            object-fit: cover;
+            display: block;
+            filter: grayscale(30%) contrast(110%); /* Dramatic, premium look */
+            transition: filter 0.8s ease;
+        }
+
+        .hero-img-full:hover {
+            filter: grayscale(0%) contrast(100%);
+        }
+
+        /* Sections General */
+        section {
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        section h2 {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        section p {
+            font-size: 1.15em;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            max-width: 700px; /* Keeps reading lines comfortable length */
+        }
+
+        section p a {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+
+        /* Music Grid */
+        .grid {
+            display: grid;
+            /* Adjustable grid that fits as many items as possible */
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .grid-item iframe {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            background: #000;
+        }
+
+        .grid-item h3 {
+            font-size: 1em;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        /* Event List */
+        .event-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .event-item {
+            display: grid;
+            grid-template-columns: 120px 1fr auto; /* Date | Details | Buttons */
+            gap: 30px;
+            align-items: baseline;
+            padding: 25px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .event-date {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        .event-details h3 {
+            font-size: 1.2em;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .event-details p {
+            font-size: 1em;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .event-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .event-button {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            font-size: 0.9em;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: all 0.2s ease;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .event-button:hover {
+            border-color: var(--text-primary);
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-right: 30px;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .social-icons a:hover {
+            color: var(--text-primary);
+        }
+
+        footer p {
+            font-size: 0.85em;
+            color: #555;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 900px) {
+            h1 { font-size: 3em; }
+            .hero-banner-container { max-height: 60vh; margin-bottom: 60px; }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 25px; }
+            h1 { font-size: 2.5em; }
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 20px 30px;
+            }
+
+            /* Make events stack vertically on mobile */
+            .event-item {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .event-date {
+                margin-bottom: 5px;
+            }
+
+            .event-actions {
+                margin-top: 10px;
+                width: 100%;
+            }
+            .event-button {
+                flex: 1; /* Make buttons full width on mobile */
+                text-align: center;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 30px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="container" role="navigation">
+        <a href="#" class="nav-logo">François Aubin</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#music">Music</a>
+            <a href="#event">Events</a>
+            <a href="blog.html">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="container">
+        <h1>Jazz Pianist & <br>Composer.</h1>
+    </header>
+
+    <div class="hero-banner-container">
+        <img src="https://i.ibb.co/Kw1Mf71/4-F0-U8155-1.jpg" class="hero-img-full" width="1920" height="1080" loading="lazy" alt="François Aubin performing on stage">
+    </div>
+
+    <main class="container">
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                François began piano lessons at six but soon transitioned to playing by ear, inspired by his father's performances of Boogie Woogie, blues, and popular tunes. At seven, after his parents returned from England with Beatles cassettes, he became captivated by their music and took up the guitar.
+            </p>
+            <p>
+                His musical horizons expanded to classical guitar, mastering works by Bach and Villa-Lobos. In the 1970s, he delved into progressive rock, influenced by bands like King Crimson and Pink Floyd. He later developed an interest in 20th-century composers such as Stockhausen, but jazz became his true passion after being introduced to Charles Mingus. By 14, François was playing jazz piano, heavily influenced by Oscar Peterson.
+            </p>
+            <p>
+                In 1988, François founded the Hiroshima Orchestra, featuring musicians like Yanick Rieu and Michel Rate, and performed at the Montreal International Jazz Festival. In 2011, François released a CD, collaborating with bassist Peter Washington and drummer Lewis Nash. This project showcased François' deep connection to the jazz tradition.
+            </p>
+            <p>
+                François is not only a jazz pianist but also deeply involved in cognitive engineering research.
+            </p>
+        </section>
+
+        <section id="music">
+            <h2>Selected Works</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <iframe src="https://www.youtube.com/embed/swjcVI_WKFQ" title="Doxy" allowfullscreen style="border:none;"></iframe>
+                    <h3>Doxy</h3>
+                </div>
+                <div class="grid-item">
+                    <iframe src="https://www.youtube.com/embed/D47UgW2aiv0" title="CG Blues" allowfullscreen style="border:none;"></iframe>
+                    <h3>CG Blues</h3>
+                </div>
+                <div class="grid-item">
+                    <iframe src="https://www.youtube.com/embed/XLt27H5siEI" title="Stella by Starlight" allowfullscreen style="border:none;"></iframe>
+                    <h3>Stella by Starlight</h3>
+                </div>
+                <div class="grid-item">
+                    <iframe src="https://www.youtube.com/embed/ICLyFSmqC1Q" title="Take the A Train" allowfullscreen style="border:none;"></iframe>
+                    <h3>Take the A Train</h3>
+                </div>
+                <div class="grid-item">
+                    <iframe src="https://www.youtube.com/embed/9a2YS91g0SM" title="Body and Soul" allowfullscreen style="border:none;"></iframe>
+                    <h3>Body and Soul</h3>
+                </div>
+                <div class="grid-item">
+                    <iframe src="https://www.youtube.com/embed/_lJYtsiAyTs" title="Francois Aubin Video" allowfullscreen style="border:none;"></iframe>
+                    <h3>Who Can I Turn To</h3>
+                </div>
+
+                <div class="grid-item">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155682159&color=%23333333&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <h3>Wintertime Satranfa</h3>
+                </div>
+                <div class="grid-item">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155573995&color=%23333333&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                    <h3>Rasun</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="event">
+            <h2>Upcoming</h2>
+            <div class="event-list">
+                <div class="event-item">
+                    <div class="event-date">
+                        JULY 2026
+                    </div>
+                    <div class="event-details">
+                        <h3>Public Recording </h3>
+                        <p>Coming soon...</p>
+                    </div>
+                    <div class="event-actions">
+                        <a href="https://www.example.com/tickets" target="_blank">
+                            <button class="event-button">Tickets</button>
+                        </a>
+                        <a href="https://www.example.com/rsvp" target="_blank">
+                            <button class="event-button">RSVP</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media">
+            <h2>Media Highlights</h2>
+            <p>Coming soon...</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>For bookings, media inquiries, or general information.</p>
+            <p><a href="mailto:frankaubin@gmail.com" style="font-size: 1.2em;">frankaubin@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="social-icons">
+            <a href="https://twitter.com/@FrancoisAubin2" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://facebook.com/francois.aubin.50" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com/francois.aubin" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        <p>&copy; 2025 François Aubin.</p>
+    </footer>
+
+</body>
+</html>

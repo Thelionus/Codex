@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GM7MQG76P6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GM7MQG76P6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | François Aubin</title>
+    <meta name="description" content="Thoughts on cognitive engineering, usability, innovation, and technology by François Aubin.">
+    <link rel="canonical" href="https://www.francoisaubin.com/blog.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Resets & Variables */
+        :root {
+            --bg-color: #121212; /* Deep Graphite */
+            --text-primary: #E0E0E0; /* Off-white */
+            --text-secondary: #A0A0A0; /* Muted Grey */
+            --accent-color: #FFFFFF; /* Pure White for interaction */
+            --border-color: #333333;
+            --content-width: 900px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--bg-color);
+            z-index: 1000;
+        }
+
+        .nav-logo {
+            font-weight: 600;
+            font-size: 1.1em;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 0.95em;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Header */
+        header {
+            padding: 60px 0 40px 0;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+        }
+
+        /* Blog Posts */
+        .blog-container {
+            padding: 60px 0;
+        }
+
+        .blog-post {
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .blog-post:first-child {
+            border-top: none;
+        }
+
+        .blog-post h2 {
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .blog-post h2 a {
+            color: var(--text-primary);
+        }
+
+        .blog-post h2 a:hover {
+            opacity: 0.7;
+        }
+
+        .blog-meta {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .blog-post p {
+            font-size: 1.05em;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--text-primary);
+            padding-bottom: 2px;
+            transition: opacity 0.3s ease;
+        }
+
+        .read-more:hover {
+            opacity: 0.7;
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-right: 30px;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .social-icons a:hover {
+            color: var(--text-primary);
+        }
+
+        footer p {
+            font-size: 0.85em;
+            color: #555;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 900px) {
+            h1 { font-size: 3em; }
+            .blog-post h2 { font-size: 1.75em; }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 25px; }
+            h1 { font-size: 2.5em; }
+            .blog-post h2 { font-size: 1.5em; }
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 20px 30px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 30px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="container" role="navigation">
+        <a href="index.html" class="nav-logo">François Aubin</a>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#music">Music</a>
+            <a href="index.html#event">Events</a>
+            <a href="blog.html">Blog</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="container">
+        <h1>Blog</h1>
+    </header>
+
+    <main class="container blog-container" id="blog-posts">
+        <!-- Blog posts will be dynamically loaded here -->
+    </main>
+
+    <footer class="container">
+        <div class="social-icons">
+            <a href="https://twitter.com/@FrancoisAubin2" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://facebook.com/francois.aubin.50" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://instagram.com/francois.aubin" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        <p>&copy; 2025 François Aubin.</p>
+    </footer>
+
+    <script src="blog.js"></script>
+
+</body>
+</html>
