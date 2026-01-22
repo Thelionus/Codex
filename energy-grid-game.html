@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebec Energy Grid Manager</title>
+    <link rel="stylesheet" href="energy-grid-game.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>⚡ Quebec Energy Grid Manager</h1>
+            <p class="subtitle">Balance production, transmission, and demand across the network</p>
+        </header>
+
+        <div class="game-stats">
+            <div class="stat-box">
+                <h3>Day</h3>
+                <div id="day" class="stat-value">1</div>
+            </div>
+            <div class="stat-box">
+                <h3>Revenue</h3>
+                <div id="revenue" class="stat-value">$0</div>
+            </div>
+            <div class="stat-box">
+                <h3>Reputation</h3>
+                <div id="reputation" class="stat-value">100</div>
+            </div>
+            <div class="stat-box status">
+                <h3>Grid Status</h3>
+                <div id="grid-status" class="stat-value balanced">BALANCED</div>
+            </div>
+        </div>
+
+        <div class="main-grid">
+            <!-- Production Section -->
+            <section class="panel production-panel">
+                <h2>🏭 Energy Production</h2>
+                <div id="production-sources"></div>
+                <div class="total-production">
+                    <strong>Total Production:</strong> <span id="total-production">0</span> MW
+                </div>
+            </section>
+
+            <!-- Demand Section -->
+            <section class="panel demand-panel">
+                <h2>🏘️ Local Demand (Quebec)</h2>
+                <div class="demand-display">
+                    <div class="demand-bar-container">
+                        <div id="demand-bar" class="demand-bar"></div>
+                    </div>
+                    <div class="demand-value">
+                        <span id="local-demand">0</span> MW
+                    </div>
+                </div>
+                <div class="demand-status" id="demand-status">Meeting demand</div>
+            </section>
+
+            <!-- Transmission Section -->
+            <section class="panel transmission-panel">
+                <h2>🔌 Transmission & Exports</h2>
+                <div id="transmission-lines"></div>
+                <div class="total-exports">
+                    <strong>Total Exports:</strong> <span id="total-exports">0</span> MW
+                </div>
+            </section>
+        </div>
+
+        <div class="balance-section">
+            <h2>⚖️ Grid Balance</h2>
+            <div class="balance-equation">
+                <div class="balance-item">
+                    <span class="label">Production</span>
+                    <span id="balance-production" class="value">0</span>
+                </div>
+                <span class="operator">=</span>
+                <div class="balance-item">
+                    <span class="label">Local Demand</span>
+                    <span id="balance-demand" class="value">0</span>
+                </div>
+                <span class="operator">+</span>
+                <div class="balance-item">
+                    <span class="label">Exports</span>
+                    <span id="balance-exports" class="value">0</span>
+                </div>
+            </div>
+            <div id="balance-message" class="balance-message"></div>
+        </div>
+
+        <div class="events-section">
+            <h3>📰 Events Log</h3>
+            <div id="events-log"></div>
+        </div>
+
+        <div class="controls">
+            <button id="next-day-btn" class="btn-primary">Next Day</button>
+            <button id="reset-btn" class="btn-secondary">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="energy-grid-game.js"></script>
+</body>
+</html>
