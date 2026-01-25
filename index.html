@@ -223,6 +223,25 @@
             color: var(--text-primary);
         }
 
+        .media-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            background: #000;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .media-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         /* Event List */
         .event-list {
             display: flex;
@@ -405,11 +424,15 @@
                     <h3>Doxy</h3>
                 </div>
                 <div class="grid-item">
-                    <iframe src="https://www.youtube-nocookie.com/embed/D47UgW2aiv0" title="CG Blues" allowfullscreen style="border:none;"></iframe>
+                    <div class="media-wrapper">
+                        <iframe src="https://player.vimeo.com/video/1158046566?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="CG Blues"></iframe>
+                    </div>
                     <h3>CG Blues</h3>
                 </div>
                 <div class="grid-item">
-                    <iframe src="https://www.youtube-nocookie.com/embed/XLt27H5siEI" title="Stella by Starlight" allowfullscreen style="border:none;"></iframe>
+                    <div class="media-wrapper">
+                        <iframe src="https://player.vimeo.com/video/1158047474?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="Stella by Starlight"></iframe>
+                    </div>
                     <h3>Stella by Starlight</h3>
                 </div>
                 <div class="grid-item">
@@ -417,12 +440,21 @@
                     <h3>Take the A Train</h3>
                 </div>
                 <div class="grid-item">
-                    <iframe src="https://www.youtube-nocookie.com/embed/9a2YS91g0SM" title="Body and Soul" allowfullscreen style="border:none;"></iframe>
+                    <div class="media-wrapper">
+                        <iframe src="https://player.vimeo.com/video/1158047762?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="Body and Soul"></iframe>
+                    </div>
                     <h3>Body and Soul</h3>
                 </div>
                 <div class="grid-item">
                     <iframe src="https://www.youtube-nocookie.com/embed/_lJYtsiAyTs" title="Francois Aubin Video" allowfullscreen style="border:none;"></iframe>
                     <h3>Who Can I Turn To</h3>
+                </div>
+
+                <div class="grid-item">
+                    <div class="media-wrapper">
+                        <iframe src="https://player.vimeo.com/video/1158047938?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="Hiroshima"></iframe>
+                    </div>
+                    <h3>Hiroshima</h3>
                 </div>
 
                 <div class="grid-item">
