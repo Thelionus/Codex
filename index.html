@@ -233,6 +233,15 @@
             margin-bottom: 15px;
         }
 
+        .media-wrapper.portrait {
+            padding-bottom: 177.34%; /* Vertical video */
+            max-width: 280px; /* Limit width for portrait videos */
+        }
+
+        .media-wrapper.square {
+            padding-bottom: 75%; /* 4:3 Aspect Ratio */
+        }
+
         .media-wrapper iframe {
             position: absolute;
             top: 0;
@@ -420,7 +429,7 @@
             <h2>Selected Works</h2>
             <div class="grid">
                 <div class="grid-item">
-                    <div class="media-wrapper">
+                    <div class="media-wrapper square">
                         <iframe src="https://player.vimeo.com/video/1158046566?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="CG Blues"></iframe>
                     </div>
                     <h3>CG Blues</h3>
@@ -438,13 +447,13 @@
                     <h3>Hiroshima</h3>
                 </div>
                 <div class="grid-item">
-                    <div class="media-wrapper">
+                    <div class="media-wrapper portrait">
                         <iframe src="https://player.vimeo.com/video/1158047474?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="Stella by Starlight"></iframe>
                     </div>
                     <h3>Stella by Starlight</h3>
                 </div>
                 <div class="grid-item">
-                    <div class="media-wrapper">
+                    <div class="media-wrapper portrait">
                         <iframe src="https://player.vimeo.com/video/1158047762?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="Body and Soul"></iframe>
                     </div>
                     <h3>Body and Soul</h3>
@@ -466,7 +475,7 @@
                 </div>
 
                 <div class="grid-item">
-                    <div class="media-wrapper">
+                    <div class="media-wrapper square">
                         <iframe src="https://player.vimeo.com/video/1158165051?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" allowfullscreen title="Myoelectric Control"></iframe>
                     </div>
                     <h3>Myoelectric Control</h3>
